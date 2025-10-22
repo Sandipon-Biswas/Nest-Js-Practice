@@ -1,0 +1,6 @@
+import { Injectable } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+
+// ✅ JWT verify করার guard
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {}
